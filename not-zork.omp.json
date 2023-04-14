@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "version": 2,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "diamond",
+          "leading_diamond": "\uE0B6",
+          "trailing_diamond": "\uE0B4",
+          "foreground": "#a82626",
+          "background": "#000000",
+          "properties": {
+            "style": "folder"
+          },
+          "template": "Inside {{ path .Path .Location}}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#6200ff",
+          "template": "{{ .UserName}} finds themselves at "
+        },
+        {
+          "type": "git",
+          "style": "diamond",
+          "leading_diamond": "\uE0B2",
+          "trailing_diamond": "\uE0B0",
+          "foreground": "#000000",
+          "background": "#04eb17",
+          "template": "{{ .HEAD}}{{if .BranchStatus}}{{ .BranchStatus }}{{ end }}."
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#04eb17",
+          "template": "{{if .Segments.Git }}{{else}}a Dungeon Entrance.{{ end }}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#a82626",
+          "background": "#000000",
+          "template": ">"
+        }
+      ]
+    }
+  ],
+  "transient_prompt": {
+    "foreground": "#a82626",
+    "background": "#000000",
+    "template": "<#000000,transparent>\uE0B6</>In {{.Folder}}, performing action <#000000,transparent>\uE0B0</>"
+  },
+  "secondary_prompt": {
+    "foreground": "#04eb17",
+    "background": "#000000",
+    "template": "<transparent,#000000>\uE0B0</><#04eb17,>></><#000000,transparent>\uE0B0</>"
+  }
+}
