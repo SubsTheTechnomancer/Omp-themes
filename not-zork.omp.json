@@ -67,12 +67,10 @@
   ],
   "transient_prompt": {
     "foreground": "#a82626",
-    "background": "#000000",
-    "template": "<#000000,transparent>\uE0B6</>In {{.Folder}}, performing action <#000000,transparent>\uE0B0</>"
+    "template": "<#000000,transparent>\uE0B6</><,#000000>In {{.Folder}}, performing action</><#000000,transparent>\uE0B0</> "
   },
   "secondary_prompt": {
     "foreground": "#04eb17",
-    "background": "#000000",
-    "template": "<transparent,#000000>\uE0B0</><#04eb17,>></><#000000,transparent>\uE0B0</>"
+    "template": "<transparent,#000000>\uE0B0</><#04eb17,#000000>></><#000000,transparent>\uE0B0</> "
   }
 }
