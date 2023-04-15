@@ -51,6 +51,20 @@
     },
     {
       "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "spotify",
+          "style": "diamond",
+          "foreground": "#000000",
+          "background": "#04eb17",
+          "leading_diamond": "\uE0B2",
+          "trailing_diamond": "\uE0B0"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
       "alignment": "left",
       "newline": true,
       "segments": [
