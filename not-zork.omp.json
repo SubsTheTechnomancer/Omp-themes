@@ -70,8 +70,9 @@
       "segments": [
         {
           "type": "text",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "style": "diamond",
+          "leading_diamond": "\u2588",
+          "trailing_diamond": "\uE0B0",
           "foreground": "#a82626",
           "background": "#000000",
           "template": ">"
