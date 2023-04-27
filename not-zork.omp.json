@@ -8,6 +8,18 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "python",
+          "style": "diamond",
+          "leading_diamond": "\uE0B6",
+          "trailing_diamond": "\uE0B4",
+          "foreground" : "#000000",
+          "background": "#a82626",
+          "properties": {
+            "display_mode": "files"
+          },
+          "template": "{{ .Venv }}"
+        },
+        {
           "type": "path",
           "style": "diamond",
           "leading_diamond": "\uE0B6",
