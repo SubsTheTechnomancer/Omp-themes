@@ -15,7 +15,7 @@
           "foreground" : "#000000",
           "background": "#a82626",
           "properties": {
-            "display_mode": "files"
+            "display_mode": "context"
           },
           "template": "{{ .Venv }}"
         },
